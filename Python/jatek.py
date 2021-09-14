@@ -3,8 +3,8 @@ ló = "Ráró"
 állat = "macska"
 print(állat)
 
-gyümölcs = "alma"
-gyümölcs = "körte"
+gyümölcs = 'alma'
+gyümölcs = 'körte'
 alma = "dinnye"
 dinnye =3
 gyümölcs = alma

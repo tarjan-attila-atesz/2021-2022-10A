@@ -1,0 +1,19 @@
+#Kerjünk be 3 számot, és határozzuk meg a nagyobbat?
+szam1 = int(input("Írd ide az első számot: "))
+szam2 = int(input("Írd ide az második számot: "))
+szam3 = int(input("Írd ide az harmadik számot: "))
+
+nagyobbikSzam = szam1
+if szam2 > nagyobbikSzam:
+    largest_number = szam2
+if szam3 > nagyobbikSzam:
+    largest_number = szam3
+print("A nagyobb számom a :", nagyobbikSzam)
+#második megoldás (nagyobb)
+print("A nagyobbik szam: ",max(szam1,szam2,szam3))
+print("A legkisebb szám: ",min(szam1,szam2,szam3))
+#A három bekért számról döntsük el, hogy szerkeszthető háromszöget kapuunk e?
+if (szam1 < (szam2+szam3) and szam2 < (szam1+szam3) and szam3 < (szam1+szam2)): 
+    print("A háromszög szerkeszthető!")
+else: 
+    print("A háromszög nem szerkeszthető!")

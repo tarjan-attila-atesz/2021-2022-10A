@@ -6,3 +6,4 @@ for i in range(len(number)):
     x +=number[i]
 
 print("A lista összege: ",x)
+#összegzés tétele

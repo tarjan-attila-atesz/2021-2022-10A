@@ -21,7 +21,7 @@ print("Páros számok: ",parosSzamok)
 
 ## Játékos feladatok
 #Tároljuk el egy jegyek listában, a programozás félévi jegyeket
-#számítsuk a jegyek összegét, átlagát, és azt, hogy hány bukás volt
+#számítsuk a jegyek összegét, átlagát, és azt, hogy hány bukás volt!
 
 
 from random import randint
@@ -38,7 +38,42 @@ for i in jegyek:
 print(osszeg2)
 print(bukasokSzama)
 
+#Határozzuk meg, hogy van-e 3-as az adatsorban. (Eldöntés tétele)
+x = 0
+while x < len(jegyek) and jegyek[x] != 3:
+    x = x+1
+if(x<len(jegyek)):
+    print("Van 3-as az adatsorban.")
+else:
+    print("Nincs 3-as az adatsorban.")
+
+#Mekkora a legnagyobb és legkisebb érték az adatsorban. (Min és Max tétel)
+#Megoldás#1
+print("A legkisebb érték: ",min(jegyek))
+print("A legnagyobb érték: ",max(jegyek))
+#Megoldás2 - Min és max tétellel
 
 
+minElem = jegyek[0]
+for legkisebbElem in jegyek:
+    if legkisebbElem < minElem:
+        minElem = legkisebbElem
+print("Minimuma: ",minElem)
 
+maxElem = jegyek[0]
+for legnagyobbElem in jegyek:
+    if legnagyobbElem > maxElem:
+        maxElem = legnagyobbElem
+print("Maximum: ",legnagyobbElem)
 
+#Van e az adatsorozatomban 1-es, ha igen, akkor hol található?
+keresettErtek = 1
+
+x = 0
+while x < len(jegyek) and jegyek[x] != keresettErtek:
+    x = x+1
+if(x<len(jegyek)):
+    print("Van ilyen elem az ",x+1," helyen")
+    print(jegyek)
+else:
+    print("Nincs ilyen elem.")

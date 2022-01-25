@@ -8,3 +8,33 @@
 #FA04: Mekkora volt a legnagyobb vendégszámod?
 #FA05: Hanyadik napon volt teltház a vendéglőben?
 
+from random import randint
+vendegloHavi =[]
+for i in range(30):
+    vendegloHavi.append(randint(10,30))
+
+#####################
+#FA01
+osszeg = 0
+for i in vendegloHavi:
+    osszeg += i
+print("Összesen ",osszeg," vendég volt egy hónapban!")
+x = 0
+#FA02
+while x < len(vendegloHavi) and vendegloHavi[x] != 30:
+    x = x+1
+if(x<len(vendegloHavi)):
+    print("Volt teltház a vendéglőben!")
+else:
+    print("Nem volt teltház a vendéglőben")
+#FA03-04
+print("A legkisebb vendégszám: ",min(vendegloHavi))
+print("A legnagyobb vendgszám: ",max(vendegloHavi))
+#FA05
+while x < len(vendegloHavi) and vendegloHavi[x] != 30:
+    x = x+1
+if(x<len(vendegloHavi)):
+    print("A",x+1,"-ik napon volt teltház a vendéglőben!")
+
+
+

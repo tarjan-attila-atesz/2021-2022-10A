@@ -10,3 +10,13 @@ print("3")
 
 #def hello():
 #    print("2")
+
+def message():
+    print("Enter a value")
+
+print("First")
+message()
+print("Second")
+message()
+print("Third")
+message()

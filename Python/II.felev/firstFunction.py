@@ -12,7 +12,7 @@ print("3")
 #    print("2")
 
 def message():
-    print("Enter a value")
+    print("Please, Enter a value")
 
 print("First")
 message()

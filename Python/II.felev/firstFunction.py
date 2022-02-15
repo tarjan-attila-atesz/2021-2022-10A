@@ -20,3 +20,8 @@ print("Second")
 message()
 print("Third")
 message()
+############
+message()
+a = int(input())
+message()
+b = int(input())

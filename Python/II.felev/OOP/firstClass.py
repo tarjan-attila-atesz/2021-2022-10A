@@ -6,4 +6,4 @@ class OsztalyNeve:
 
 
 print(OsztalyNeve.metodusNeve)
-<function OsztalyNeve.metodusNeve at 0x000002BD5ADD57E0>
+#<function OsztalyNeve.metodusNeve at 0x000002BD5ADD57E0>
